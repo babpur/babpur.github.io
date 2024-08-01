@@ -204,9 +204,7 @@
 													<span class="s-title">Spring Framework</span>의 사용법을 익히고 Spring Boot, MyBatis를 이용한 <span class="s-title">MVC 패턴</span> 프로젝트를 구현하는 방법을 실습했습니다.
 												</p>
 												<p>[5개월 차]<br>
-													스프링 부트 기반의 <span class="s-title">파이널 팀 프로젝트</span>를 시작했습니다.
-													요구사항명세서, ERD 설계, 화면정의서 작성 등 <span class="s-title">산출물을 제작</span>하고, 매주 팀원끼리의 <span class="s-title">코드 리뷰</span>와 <span class="s-title">현직자 멘토링</span> 시간을 가졌습니다.
-												
+													학원 교육 이외에 JavaScript, Java 등을 다양한 방식으로 구현하기 위해 관련 도서를 읽고 인터넷 강의를 통해 학습하고 있습니다.  
 												</p>
 												
 											</p>
@@ -488,81 +486,44 @@
 											<tr>
 												<td colspan="2">
 													<ol>
-														<li><span class="b-title">보호자 / 펫 조회</span>
+														<li><span class="b-title">보호자 / 펫 등록</span>
 															<ul>
-																<li><span class="s-title">보호자 / 펫의 정보 조회</span>
-																	<div>- 펫 이름, 보호자 이름, 연락처 뒷자리, 등록일(최초), 접수한 시간을 출력합니다.</div>
-																</li>
-																<li><span class="s-title">보호자 / 펫의 정보 검색</span>
-																	<div>- 펫 이름 / 보호자 이름 / 연락처 등을 검색할 수 있습니다.</div>
+																<li><span class="s-title">보호자 / 펫의 정보 등록</span>
+																	<div>- 보호자 등록: 내방 / 전화 상담을 진행한 보호자의 이름, 연락처, 주소를 등록합니다.</div>
+																	<div>- 펫 등록: 보호자 등록이 선행되며, 보호자 상세 페이지에서 펫 등록 버튼을 클릭 후 분류, 종류, 이름, 생일 등을 등록합니다.</div>
+																	<div>- 공백이 있을 시 등록되지 않습니다.</div>
 																</li>
 															</ul>
 														</li>
-														<li><span class="b-title">보호자 조회</span>
+														<li><span class="b-title">보호자 / 펫 정보 수정</span>
 															<ul>
-																<li><span class="s-title">보호자 정보 조회</span>
-																	<div>- 보호자의 이름, 연락처 뒷자리, 보호자 명의로 등록되어 있는 펫의 수, 최초 방문 등록일을 출력합니다.</div>																		
-																</li>
-																<li><span class="s-title">보호자 정보 검색</span>
-																	<div>- 보호자의 이름 / 연락처 등을 검색할 수 있습니다.</div>
-																</li>
-															</ul>
-														</li>
-														<li><span class="b-title">펫 조회</span>
-															<ul>
-																<li><span class="s-title">펫 정보 조회</span>
-																	<div>- 펫 이름, 보호자 이름, 연락처 뒷자리를 출력합니다.</div>																		
-																</li>
-																<li><span class="s-title">보호자 정보 검색</span>
-																	<div>- 보호자의 이름 / 연락처 등을 검색할 수 있습니다.</div>
-																</li>
-															</ul>
-														</li>
-														<li><span class="b-title">보호자 등록 및 수정</span>
-															<ul>
-																<li><span class="s-title">보호자 등록</span>
-																	<div>- 검색 조회 시 정보가 없다면 이름 / 연락처 / 주소의 정보를 입력하여 보호자를 등록할 수 있습니다. </div>
-																	<div>- 보호자 등록 성공 시 보호자 상세 페이지로 이동합니다. </div>
-																</li>
 																<li><span class="s-title">보호자 정보 수정</span>
-																	<div>- 보호자의 연락처 / 주소를 수정할 수 있습니다.</div>
-																</li>
-															</ul>
-														</li>
-														<li><span class="b-title">보호자 상세 페이지</span>
-															<ul>
-																<li><span class="s-title">보호자 상세 페이지</span>
-																	<div>- 고객 번호, 보호자 이름, 연락처, 주소를 출력합니다. </div>
-																</li>
-																<li><span class="s-title">보호자의 펫 리스트</span>
-																	<div>- 보호자와 펫 테이블을 JOIN하여 보호자 상세 정보 하단에 명의로 등록되어 있는 펫 리스트 출력합니다.</div>
-																	<div>- 펫의 이름, 최근 진료일, 접수하기 버튼을 출력합니다.</div>
-																	<div>- 초진 등의 사유로 진료 이력이 없을 경우 "진료 이력 없음" 문구가 출력됩니다.</div>
-																</li>
-															</ul>
-														</li>
-														<li><span class="b-title">펫 등록 및 수정</span>
-															<ul>
-																<li><span class="s-title">펫 등록</span>
-																	<div>- 보호자 상세 페이지에서 펫 등록이 가능합니다.</div>
-																	<div>- 포유류 / 파충류 / 조류의 분류를 선택</div>
-																	<div>- 강아지 / 고양이 등의 종류를 직접 입력</div>
-																	<div>- 펫의 이름을 직접 입력</div>
-																	<div>- 펫의 나이에 따른 진료를 위해 생년월일을 입력</div>
+																	<div>- 보호자의 전화번호, 주소를 수정합니다.</div>																		
 																</li>
 																<li><span class="s-title">펫 정보 수정</span>
-																	<div>- 펫의 정보 중 이름만 수정이 가능합니다.</div>
+																	<div>- 펫의 이름을 수정할 수 있습니다.</div>
 																</li>
 															</ul>
 														</li>
-														<li><span class="b-title">펫 상세 페이지</span>
+														<li><span class="b-title">보호자 / 펫 조회</span>
 															<ul>
-																<li><span class="s-title">펫 상세 페이지</span>
-																	<div>- 펫 번호, 펫 분류, 펫 종류, 펫 이름, 생년월일, 보호자의 이름, 보호자 연락처를 출력합니다. </div>
-																	<div>- 수정하기 버튼 클릭 시 펫 수정 페이지로 이동합니다.</div>
+																<li><span class="s-title">보호자 / 펫 목록</span>
+																	<div>- 등록된 보호자의 정보를 조회합니다.</div>
+																	<div>- 등록된 펫의 정보를 조회합니다.</div>
+																										
+																</li>
+																<li><span class="s-title">보호자 / 펫 검색</span>
+																	<div>- 보호자의 이름 / 연락처 / 펫의 이름을 검색할 수 있습니다.</div>
+																</li>
+																<li><span class="s-title">보호자 / 펫 상세 보기</span>
+																	<div>- 보호자의 상세 정보를 출력합니다.</div>
+																	<div>- 보호자의 상세 보기 페이지에서 진료했던 펫의 정보를 확인할 수 있습니다.</div>
+																	<div>- 보호자의 상세 보기 페이지에서 진료할 펫을 등록할 수 있습니다.</div>
+																	<div>- 펫의 상세 정보를 출력합니다.</div>
 																</li>
 															</ul>
 														</li>
+														
 														<li><span class="b-title">진료 상세 페이지</span>
 															<ul>
 																<li><span class="s-title">고객 정보</span>
